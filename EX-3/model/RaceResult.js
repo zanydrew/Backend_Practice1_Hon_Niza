@@ -1,0 +1,33 @@
+import { Duration } from "./Duration.js";
+/**
+ * This class handle a single race time for a given particicpant and sport type
+ */
+export class RaceResult {
+
+       // TODO
+  /**
+   *
+   */
+  _participantId;
+  _sportType;
+  _duration;
+
+  constructor(participantId, sportType, duration) {
+    this._participantId = participantId;
+    this._sportType = sportType;
+    this._duration = duration;
+  }
+
+  get participantId() {
+    return this._participantId;
+  }
+
+  get sportType() {
+    return this._sportType;
+  }
+
+  get duration() {
+    return this._duration;
+  }
+
+  }
