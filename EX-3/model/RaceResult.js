@@ -6,12 +6,32 @@ export class RaceResult {
 
        // TODO
   /**
-   *
+   * Participant ID.
+   * @type {string}
+   * @private
    */
   _participantId;
+
+  /**
+   * Sport type
+   * @type {string}
+   * @private
+   */
   _sportType;
+
+  /**
+   * Race duration.
+   * @type {Duration}
+   * @private
+   */
   _duration;
 
+  /**
+   * Creates a RaceResult object.
+   * @param {string} participantId
+   * @param {string} sportType
+   * @param {Duration} duration
+   */
   constructor(participantId, sportType, duration) {
     this._participantId = participantId;
     this._sportType = sportType;
